@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><link crossorigin="anonymous" href="https://cdn.jsdelivr.net" rel="preconnect"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="Bitumen supply for contractors and road works across Ghana and within West Africa, with logistics, documentation and responsive project support." name="description"/>
+<meta content="#0f171c" name="theme-color"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; font-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self' mailto: https://wa.me; object-src 'none'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<meta content="Bitumen Supply | ASKWNE Ghana Ltd" property="og:title"/>
+<meta content="Bitumen supply for contractors and road works across Ghana and within West Africa, with logistics, documentation and responsive project support." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.askwneghana.com/bitumen/" property="og:url"/>
+<link href="../assets/images/brand/askwne-logo.webp" rel="icon" type="image/webp"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="../assets/css/tailwind.css" rel="stylesheet"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
+<title>Bitumen Supply | ASKWNE Ghana Ltd</title>
+<link rel="canonical" href="https://www.askwneghana.com/bitumen/">
+
+<style>
+/* Bitumen page only: separate the supply desk from the enquiry card. */
+.page-bitumen .bitumen-supply-layout {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(20px, 3vw, 34px);
+  border: 1px solid rgba(15, 23, 28, .08);
+  border-radius: 30px;
+  background: linear-gradient(145deg, #f7fbf8 0%, #ffffff 68%, #f1f7f3 100%);
+  box-shadow: 0 22px 60px rgba(15, 23, 28, .07);
+}
+.page-bitumen .bitumen-supply-layout .supply-quote-card {
+  background: linear-gradient(145deg, #020617 0%, #0f172a 58%, #102b22 100%) !important;
+  border: 1px solid rgba(255,255,255,.10);
+  color: #fff;
+  box-shadow: 0 28px 70px rgba(2, 6, 23, .25);
+}
+.page-bitumen .bitumen-supply-layout .supply-quote-card h3 { color:#fff; }
+.page-bitumen .bitumen-supply-layout .supply-quote-card p { color:#cbd5e1; }
+.page-bitumen .bitumen-supply-layout .supply-quote-card .quote-field {
+  background: rgba(255,255,255,.055);
+  border-color: rgba(255,255,255,.10);
+}
+.page-bitumen .bitumen-supply-layout .supply-quote-card .quote-field small { color:#94a3b8; }
+.page-bitumen .bitumen-supply-layout .bitumen-promise-card {
+  background: #fff;
+}
+@media (max-width: 760px) {
+  .page-bitumen .bitumen-supply-layout { padding: 16px; border-radius: 24px; }
+  .page-bitumen .supply-quote-card { border-radius: 22px !important; }
+
+  /* Mobile: stack the three enquiry fields cleanly and keep long copy inside the card. */
+  .page-bitumen .quote-fields-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    width: 100%;
+    min-width: 0;
+    margin-top: 10px;
+  }
+  .page-bitumen .quote-field {
+    grid-template-columns: 32px minmax(0, 1fr);
+    align-items: start;
+    gap: 10px;
+    min-width: 0;
+    padding: 13px 0;
+  }
+  .page-bitumen .quote-field > span {
+    display: inline-grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px;
+    background: rgba(255,255,255,.06);
+    line-height: 1;
+  }
+  .page-bitumen .quote-field > div {
+    min-width: 0;
+  }
+  .page-bitumen .quote-field b {
+    font-size: .9rem;
+    line-height: 1.35;
+  }
+  .page-bitumen .quote-field small {
+    max-width: 100%;
+    font-size: .76rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  /* Mobile: turn the four process cards into clean, single-column text blocks. */
+  .page-bitumen .supply-process-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .page-bitumen .supply-process-grid .supply-step {
+    min-height: 0;
+    padding: 16px 0;
+    border: 0;
+    border-top: 1px solid var(--line);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .page-bitumen .supply-process-grid .supply-step:first-child {
+    border-top: 0;
+    padding-top: 4px;
+  }
+  .page-bitumen .supply-process-grid .supply-step > span {
+    position: static;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .page-bitumen .supply-process-grid .supply-step h3 {
+    margin-top: 0;
+    font-size: 1.08rem;
+  }
+}
+</style>
+<meta content="summary" name="twitter:card"/>
+<meta content="ASKWNE Ghana Ltd" name="twitter:title"/>
+<meta content="Bitumen supply for contractors and road works across Ghana and within West Africa, with logistics, documentation and responsive project support." name="twitter:description"/>
+</head>
+<body class="page-bitumen" data-page="bitumen">
+<header class="site-header" data-header="">
+<div class="top-strip">
+<div class="container-fluid site-container d-flex justify-content-between align-items-center gap-3 py-2">
+<span class="top-strip-text">Ghanaian-owned • Building • Road Construction • Bitumen Supply</span>
+<span class="top-strip-text d-none d-md-inline">Responsive project enquiries • Ghana + West Africa</span>
+</div>
+</div>
+<div class="nav-shell">
+<div class="container-fluid site-container nav-inner">
+<a aria-label="ASKWNE Ghana Ltd home" class="brand-mark" href="../">
+<img alt="ASKWNE Ghana Ltd" decoding="async" height="1024" loading="eager" src="../assets/images/brand/askwne-logo.webp" width="1536"/>
+</a>
+<div class="desktop-nav"><a class="nav-link-premium" href="../about/">About</a>
+<a class="nav-link-premium is-active" href="../bitumen/">Bitumen Supply</a>
+<a class="nav-link-premium" href="../building/">Building</a>
+<a class="nav-link-premium" href="../construction/">Road Construction</a>
+<a class="nav-cta-premium" href="../appointment/">Book an Appointment <span>↗</span></a></div>
+<div class="nav-actions">
+<button aria-label="Open site search" class="nav-search-btn" data-search-open="" type="button">⌕</button>
+<button aria-controls="mobileNav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle-premium" data-menu-toggle="" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<div class="mobile-nav-overlay" data-menu-overlay=""></div>
+<aside aria-hidden="true" class="mobile-drawer" data-mobile-drawer="" id="mobileNav">
+<div class="mobile-drawer-top">
+<a class="mobile-logo" href="../"><img alt="ASKWNE Ghana Ltd" decoding="async" height="1024" loading="eager" src="../assets/images/brand/askwne-logo.webp" width="1536"/></a>
+<button aria-label="Close navigation" class="drawer-close" data-menu-close="" type="button">×</button>
+</div>
+<div class="mobile-search-box">
+<label class="visually-hidden" for="mobileSearch">Search this website</label>
+<input autocomplete="off" data-search-input="" id="mobileSearch" placeholder="Search bitumen, building, roads..." type="search"/>
+<button aria-label="Search" data-search-submit="" type="button">↗</button>
+</div>
+<div class="mobile-search-results" data-search-results=""></div>
+<nav aria-label="Mobile navigation" class="mobile-nav-links">
+<a class="mobile-nav-item" href="../about/"><span>01</span><strong>About</strong><b>↗</b></a>
+<a class="mobile-nav-item is-active" href="../bitumen/"><span>02</span><strong>Bitumen Supply</strong><b>↗</b></a>
+<a class="mobile-nav-item" href="../building/"><span>03</span><strong>Building</strong><b>↗</b></a>
+<a class="mobile-nav-item" href="../construction/"><span>04</span><strong>Road Construction</strong><b>↗</b></a>
+<a class="mobile-nav-cta" href="../appointment/"><span>→</span><strong>Book an appointment</strong><b>24/7</b></a>
+</nav>
+<div class="mobile-contact-card">
+<span class="eyebrow">DIRECT CONTACT</span>
+<h3>Need a local partner or supplier in Ghana?</h3>
+<p>Talk to ASKWNE about supply, building delivery, road works or a new project.</p>
+<div class="mobile-contact-actions">
+<a href="tel:+233242051066">Call</a>
+<a href="https://wa.me/233242051066?text=Hello%20ASKWNE%20Ghana%20Ltd%2C%20I%20would%20like%20to%20make%20a%20project%20enquiry.">WhatsApp</a>
+<a href="mailto:askwneghanalimited23@gmail.com">Email</a>
+</div>
+</div>
+</aside>
+<div aria-hidden="true" class="search-panel" data-search-panel="">
+<div class="search-panel-inner">
+<div class="search-panel-head">
+<span class="eyebrow">SEARCH ASKWNE</span>
+<button aria-label="Close search" class="search-panel-close" data-search-close="" type="button">×</button>
+</div>
+<label class="search-panel-input-wrap">
+<span>⌕</span>
+<input autocomplete="off" data-desktop-search="" placeholder="Search services, pages, supply, roads..." type="search"/>
+</label>
+<div class="desktop-search-results" data-desktop-search-results=""></div>
+</div>
+</div>
+<div class="scroll-progress" data-scroll-progress=""></div>
+<div aria-hidden="true" class="site-preloader" data-preloader="">
+<div class="preloader-card">
+<img alt="" decoding="async" height="1024" loading="lazy" src="../assets/images/brand/askwne-logo.webp" width="1536"/>
+<div class="preloader-line"><span></span></div>
+<small>BUILDING • CONSTRUCTION • SUPPLY</small>
+</div>
+</div>
+<main id="main">
+<section class="inner-hero">
+<div class="container-fluid site-container w-full max-w-full tw-w-full tw-max-w-full">
+<div class="row align-items-end g-4 inner-hero-row">
+<div class="col-12 col-lg-7 reveal reveal-left">
+<span class="eyebrow">BITUMEN SUPPLY</span>
+<h1>A supply desk built for active road projects.</h1>
+<p>Bitumen supply for contractors in Ghana and selected West African routes — handled around the project requirement, delivery window and agreed terms.</p>
+</div>
+<div class="col-12 col-lg-5 reveal reveal-right">
+<div class="inner-hero-image"><img alt="Bitumen drums and storage tanks at a supply yard" decoding="async" fetchpriority="high" height="1536" loading="eager" src="../assets/images/services/supply.webp" width="2752"/><span class="inner-hero-tag">ASKWNE • FIELD VIEW</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-space">
+<div class="container-fluid site-container w-full max-w-full tw-w-full tw-max-w-full">
+<div class="bitumen-supply-layout">
+<div class="row g-5 align-items-start">
+<div class="col-12 col-lg-7 reveal reveal-left">
+<span class="eyebrow">THE BITUMEN SUPPLY DESK</span>
+<h2 class="display-title">Keep the work moving. Keep the next delivery in sight.</h2>
+<p class="lead-copy">ASKWNE Ghana Ltd supplies bitumen to contractors in Ghana and, where the logistics and project scope allow, within West Africa. We do not publish public prices because every supply request is different.</p>
+<p>Tell us what the project needs — approximate quantity, preferred packaging or specification, delivery destination and required date — and we can work from the actual requirement instead of a generic price list.</p>
+<div class="supply-promise-grid">
+<article class="bitumen-promise-card reveal"><span class="card-no">01</span><h3>Contractor-ready response</h3><p>Tell us the quantity, destination and delivery window. We build the conversation around the actual project instead of a generic catalogue.</p><span class="card-arrow">↗</span></article>
+<article class="bitumen-promise-card reveal"><span class="card-no">02</span><h3>Procurement-aware supply</h3><p>We keep the enquiry focused on the information a serious project team needs for sourcing, receiving and delivery coordination.</p><span class="card-arrow">↗</span></article>
+<article class="bitumen-promise-card reveal"><span class="card-no">03</span><h3>Ghana + West Africa</h3><p>Regional requests can be assessed around route, volume, timing and logistics so the supply plan fits the job.</p><span class="card-arrow">↗</span></article>
+</div>
+</div>
+<div class="col-12 col-lg-5 reveal reveal-right">
+<div class="supply-quote-card bg-slate-950 text-white rounded-3xl p-4 p-md-5 shadow-2xl">
+<span class="eyebrow">SUPPLY ENQUIRY</span><h3>Want a quote without wasting time?</h3>
+<p>Prepare your requirement and send it directly to the ASKWNE team.</p>
+<div class="quote-fields-grid">
+<div class="quote-field"><span>01</span><div><b>Product / specification</b><small>What does the project call for?</small></div></div>
+<div class="quote-field"><span>02</span><div><b>Quantity</b><small>Approximate drums, tonnes or project requirement.</small></div></div>
+<div class="quote-field"><span>03</span><div><b>Destination + timing</b><small>Where should it go and when is it needed?</small></div></div>
+</div>
+<a class="btn-premium btn-primary-premium w-100" href="../appointment/">Request Bitumen Supply <span>↗</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-space section-cream">
+<div class="container-fluid site-container w-full max-w-full tw-w-full tw-max-w-full">
+<div class="section-intro row align-items-end g-4">
+<div class="col-12 col-lg-7"><span class="eyebrow">THE COMMERCIAL CONVERSATION</span><h2>We make the supply proposition attractive without pretending every order is the same.</h2></div>
+<div class="col-12 col-lg-5"><p>For qualifying contractors and approved orders, the commercial structure can be discussed around the project's cash flow, logistics and delivery requirements.</p></div>
+</div>
+<div class="commercial-grid mt-5">
+<article class="commercial-card reveal"><span>01</span><h3>Competitive pricing</h3><p>Pricing is handled privately and can be shaped around the specific supply requirement rather than a public one-size-fits-all figure.</p></article>
+<article class="commercial-card reveal featured"><span>02</span><h3>Delivery-first arrangements</h3><p>Where an approved client or order qualifies, delivery before payment or staged payment terms may be agreed in writing before dispatch.</p></article>
+<article class="commercial-card reveal"><span>03</span><h3>Project continuity</h3><p>The aim is to prevent material delays from becoming construction delays by keeping communication and supply planning active.</p></article>
+</div>
+
+</div>
+</section>
+<section class="section-space">
+<div class="container-fluid site-container w-full max-w-full tw-w-full tw-max-w-full">
+<div class="row g-4 g-xl-5 align-items-center">
+<div class="col-12 col-lg-5 reveal reveal-left"><span class="eyebrow">WHO WE SUPPORT</span><h2>Built around the people who feel material delays first.</h2><p>Our priority audience is the contractor, supplier-facing project team and infrastructure partner who needs material availability to match an active work programme.</p><ul class="clean-check-list"><li>Road contractors</li><li>Main contractors &amp; subcontractors</li><li>Infrastructure project teams</li><li>Private civil works partners</li><li>Approved regional supply requests</li></ul></div>
+<div class="col-12 col-lg-7"><div class="supply-process-grid"><article class="supply-step reveal"><span>01</span><h3>Send the request</h3><p>Quantity, destination, project timing and any specification information you already have.</p></article><article class="supply-step reveal"><span>02</span><h3>We review it</h3><p>We align the enquiry with sourcing, logistics, availability and commercial requirements.</p></article><article class="supply-step reveal"><span>03</span><h3>Agree the terms</h3><p>Price, delivery, documentation and payment structure are confirmed before action.</p></article><article class="supply-step reveal"><span>04</span><h3>Move the material</h3><p>Dispatch and receiving communication stay visible so the team knows what happens next.</p></article></div></div>
+</div>
+</div>
+</section>
+<section class="section-space section-dark" id="gallery">
+<div class="container-fluid site-container w-full max-w-full tw-w-full tw-max-w-full">
+<div class="section-intro light-intro row align-items-end g-4"><div class="col-12 col-lg-7"><span class="eyebrow eyebrow-light">BITUMEN FIELD GALLERY</span><h2>See the supply environment before you make the call.</h2></div><div class="col-12 col-lg-5"><p>Selected site and road-material visuals are presented to make the supply offer more tangible.</p></div></div>
+<div class="masonry-gallery mt-5">
+<button class="gallery-card gallery-tall reveal" data-caption="Bitumen storage and supply yard" data-gallery="../assets/images/services/supply.webp" type="button"><img alt="Bitumen storage and supply yard" decoding="async" height="1536" loading="lazy" src="../assets/images/services/supply.webp" width="2752"/><span>Supply yard ↗</span></button>
+<button class="gallery-card reveal" data-caption="Industrial supply environment" data-gallery="../assets/images/hero/engineer.webp" type="button"><img alt="Industrial supply environment" decoding="async" height="1536" loading="lazy" src="../assets/images/hero/engineer.webp" width="2752"/><span>Industrial handling ↗</span></button>
+<button class="gallery-card gallery-wide reveal" data-caption="Road tanker moving material on a project route" data-gallery="../assets/images/projects/project-06.webp" type="button"><img alt="Road tanker moving material on a project route" decoding="async" height="1536" loading="lazy" src="../assets/images/projects/project-06.webp" width="2752"/><span>Road logistics ↗</span></button>
+<button class="gallery-card reveal" data-caption="Fresh asphalt road work" data-gallery="../assets/images/projects/project-05.webp" type="button"><img alt="Fresh asphalt road work" decoding="async" height="1038" loading="lazy" src="../assets/images/projects/project-05.webp" width="1516"/><span>Road surface ↗</span></button>
+</div>
+</div>
+</section>
+<section class="section-space"><div class="container-fluid site-container w-full max-w-full tw-w-full tw-max-w-full"><div class="section-intro"><span class="eyebrow">BITUMEN FAQ</span><h2>Questions contractors usually ask first.</h2></div><div class="accordion premium-accordion mt-5" id="bitumenFaq"><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1" type="button">Do you publish your bitumen price?</button></h2><div class="accordion-collapse collapse show" data-bs-parent="#bitumenFaq" id="faq1"><div class="accordion-body">No. We keep pricing private so we can quote against the actual project requirement, volume, destination, timing and agreed commercial terms.</div></div></div><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2" type="button">Can delivery happen before payment?</button></h2><div class="accordion-collapse collapse" data-bs-parent="#bitumenFaq" id="faq2"><div class="accordion-body">Yes, where the project and order qualify. We can discuss a flexible delivery-before-payment or staged-payment arrangement with approved contractors, helping you keep work moving when immediate cash flow is tight. The agreed terms are confirmed before dispatch.</div></div></div><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3" type="button">Can you supply outside Ghana?</button></h2><div class="accordion-collapse collapse" data-bs-parent="#bitumenFaq" id="faq3"><div class="accordion-body">Yes. We supply contractors in Ghana and can also assess delivery to other West African destinations based on quantity, route, timing and logistics. Tell us where the material is needed and we will work out the most practical supply arrangement.</div></div></div></div></div></section>
+<section class="final-cta section-space pt-0"><div class="container-fluid site-container w-full max-w-full tw-w-full tw-max-w-full"><div class="final-cta-card reveal-scale"><div><span class="eyebrow">READY TO SUPPLY</span><h2>Tell us what your project needs.</h2><p>No public pricing. Just a direct conversation about the actual requirement.</p></div><div class="final-cta-actions"><a class="btn-premium btn-primary-premium" href="../appointment/?service=bitumen">Request Supply <span>↗</span></a><a class="btn-premium btn-outline-premium" href="https://wa.me/233242051066?text=Hello%20ASKWNE%2C%20I%20need%20a%20bitumen%20supply%20quote.">WhatsApp <span>↗</span></a></div></div></div></section>
+</main>
+<footer class="site-footer">
+<div class="container-fluid site-container py-5">
+<div class="row g-4 g-lg-5">
+<div class="col-12 col-lg-5">
+<img alt="ASKWNE Ghana Ltd" class="footer-logo mb-4" decoding="async" height="1024" loading="eager" src="../assets/images/brand/askwne-logo.webp" width="1536"/>
+<p class="footer-lead">A practical Ghanaian-owned engineering and construction company focused on keeping materials moving, projects progressing and clients clearly informed.</p>
+<div class="footer-badges"><span>Incorporated</span><span>Ghanaian-owned</span><span>Project-focused</span></div>
+</div>
+<div class="col-6 col-lg-2">
+<span class="footer-label">EXPLORE</span>
+<div class="footer-links">
+<a href="../about/">About</a>
+<a href="../bitumen/">Bitumen Supply</a>
+<a href="../building/">Building</a>
+<a href="../construction/">Road Construction</a>
+<a href="../appointment/">Appointment</a>
+</div>
+</div>
+<div class="col-6 col-lg-2">
+<span class="footer-label">CONTACT</span>
+<div class="footer-links">
+<a href="mailto:askwneghanalimited23@gmail.com">Email</a>
+<a href="tel:+233242051066">+233 24 205 1066</a>
+<a href="https://wa.me/233242051066">WhatsApp</a>
+</div>
+</div>
+<div class="col-12 col-lg-3">
+<span class="footer-label">OPERATING LOCATION</span>
+<p class="footer-location">Papase, Kasoa, Ghana<br/>Digital Address: CW-0311-6955</p>
+<a class="footer-book" href="../appointment/">Start a project conversation <span>↗</span></a>
+</div>
+</div>
+<div class="footer-bottom mt-5 pt-4">
+<span>© 2026 ASKWNE Ghana Ltd. All rights reserved.</span>
+<span>Built for fast, clear enquiries.</span>
+</div>
+</div>
+</footer>
+<div aria-label="Quick contact actions" class="mobile-quick-bar">
+<a href="tel:+233242051066"><span>☎</span><small>Call</small></a>
+<a href="https://wa.me/233242051066"><span>◉</span><small>WhatsApp</small></a>
+<a class="quick-main" href="../appointment/"><span>＋</span><small>Book</small></a>
+<a href="mailto:askwneghanalimited23@gmail.com"><span>✉</span><small>Email</small></a>
+</div>
+<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwxH9j09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+/* Bitumen FAQ fallback: works even when the Bootstrap CDN is unavailable. */
+document.addEventListener('DOMContentLoaded', function () {
+  var faq = document.getElementById('bitumenFaq');
+  if (!faq) return;
+  var buttons = faq.querySelectorAll('.accordion-button');
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      if (window.bootstrap && window.bootstrap.Collapse) return;
+      var id = button.getAttribute('aria-controls');
+      var target = id ? document.getElementById(id) : null;
+      if (!target) return;
+      var wasOpen = target.classList.contains('show');
+      faq.querySelectorAll('.accordion-collapse').forEach(function (panel) { panel.classList.remove('show'); });
+      faq.querySelectorAll('.accordion-button').forEach(function (item) {
+        item.classList.add('collapsed');
+        item.setAttribute('aria-expanded', 'false');
+      });
+      if (!wasOpen) {
+        target.classList.add('show');
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

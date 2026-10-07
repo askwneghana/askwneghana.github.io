@@ -1,0 +1,7 @@
+{
+  "name": "askwne-ghana-premium-static",
+  "private": true,
+  "devDependencies": {
+    "tailwindcss": "3.4.19"
+  }
+}
